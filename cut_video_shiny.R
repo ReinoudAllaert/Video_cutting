@@ -2,7 +2,7 @@ library(shiny)
 library(shinyFiles)
 library(readr)
 
-options(shiny.maxRequestSize = 20000*1024^2)  # Set maximum upload size to 20 GB
+options(shiny.maxRequestSize = 40000*1024^2)  # Set maximum upload size to 20 GB
 
 ui <- fluidPage(
   titlePanel("Video Cutter"),
@@ -142,4 +142,3 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-
